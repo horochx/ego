@@ -1,5 +1,7 @@
 # ego
 
+一个二次元绘画作品分享网站。
+
 所有交互及AJAX请求均通过原生JavaScript实现，不使用第三方框架和库（如jQuery）。
 
 查看在线演示：http://demo.horochx.org/ego/html/index.html
