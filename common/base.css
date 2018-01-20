@@ -1,0 +1,52 @@
+/* reset */
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0;padding:0;}
+header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{display:block;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;font-weight:normal;}
+html,body,fieldset,img,iframe,abbr{border:0;}
+i,cite,em,var,address,dfn{font-style:normal;}
+[hidefocus],summary{outline:0;}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6,small{font-size:100%;}
+sup,sub{font-size:83%;}
+pre,code,kbd,samp{font-family:inherit;}
+q:before,q:after{content:none;}
+textarea{overflow:auto;resize:none;}
+label,summary{cursor:default;}
+a,button{cursor:pointer;}
+h1,h2,h3,h4,h5,h6,em,strong,b{font-weight:bold;}
+del,ins,u,s,a,a:hover{text-decoration:none;}
+body,textarea,input,button,select,keygen,legend{color:#333;outline:0;}
+a,a:hover{color:#231815;}
+/* 1 rem = 100px */
+html{font-size: 625%;}
+body{font:.14rem/.16rem '微软雅黑';background-color:#efefef;}
+*{box-sizing:border-box;}
+/* 模块m-
+*/
+.m-modal{position:fixed;top:0;right:0;bottom:0;left:0;background-color:rgba(255,255,255,.6);}
+.m-modal>div{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}
+/* 元件u-
+* u-button
+*/
+.u-button{display:inline-block;border:none;}
+.u-icon{display:inline-block;background:url(../res/img/sprite.png) 10000px 10000px no-repeat;}
+.u-more{display:inline-block;}
+.u-more span{display:inline-block;font:.13rem/1 '微软雅黑';vertical-align:middle;color:#727171}
+.u-more i{display:inline-block;width:.29rem;height:.29rem;margin-left:.09rem;;border-radius:50%;background:url(../res/img/sprite.png) no-repeat 0 -4.11rem;vertical-align:middle;}
+/* 功能f-
+* f-cb:清除浮动
+* f-center-x:水平居中
+* f-center-y：垂直居中
+* f-justify：两端对齐
+*/
+.f-center-x{text-align:center;font:0/1 "微软雅黑";}
+.f-center-y{display:table-cell;vertical-align:middle;font:0/1 "微软雅黑";}
+.f-justify{text-align:justify;font:0/1 "微软雅黑";}
+.f-justify::after{content:'';display:inline-block;width:100%;}
+.f-cb{display:block;} /* 用于修复IE11的莫名bug */
+.f-cb::after{display:block;content:".";clear:both;visibility:hidden;height:0;overflow:hidden;}
+/* 状态z-
+*/
+.z-hidden{display:none;}
+.z-target{box-shadow:0 0 .05rem #2ea7e0 inset}

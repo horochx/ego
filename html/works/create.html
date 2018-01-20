@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width">
+    <meta name="description" content="ego"/>
+    <meta name="keywords" content="ego"/>
+    <title>ego</title>
+    <link href="../../common/base.css" rel="stylesheet"/>
+    <link href="../../common/header.css" rel="stylesheet"/>
+    <link href="../../page/works/create.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- 顶栏 -->
+<header class="g-header">
+    <div class="g-header-c">
+        <div class="g-tabs"></div>
+        <div class="g-search"></div>
+        <div class="g-guest"></div>
+    </div>
+</header>
+<!-- /顶栏 -->
+<!-- 主体 -->
+<form class="g-main f-cb" id="create_work">
+    <div class="g-left">
+        <div class="m-section">
+            <span class="option_name">作品分类</span><label><input type="radio" name="category" value="0" checked><span
+                class="btn btn-1">原创</span></label><label><input type="radio" name="category" value="1"><span
+                class="btn btn-2">临摹</span></label>
+        </div>
+        <div class="m-section">
+            <span class="option_name">上传图片</span><label><input type="file" accept="image/*" name="file" multiple><span
+                class="btn btn-3">选择图片上传</span></label><span
+                class="error"></span>
+            <p class="prompt">提示：作品可以包含多张图片 ，一次选择多张图片，最多不超过10张（单张图片大小小于1M）</p>
+        </div>
+        <div class="m-section m-section-preview">
+            <ul class="list">
+            </ul>
+        </div>
+        <div class="m-section m-section-1">
+            <label><span class="option_name option_name-1">作品名称</span><input class="input" type="text" name="name"
+                                                                             placeholder="给作品起个名字吧"></label><span
+                class="error"></span><br>
+            <label><span class="option_name option_name-1 option_name-2">作品说明</span><textarea class="input input-1"
+                                                                                              name="description"></textarea></label><br>
+            <span class="option_name option_name-1 option_name-3">标签</span>
+            <div class="tags">
+                <label><input class="tag_input" type="text"><span><i></i>自定义标签</span></label>
+            </div>
+            <p class="recommend">推荐标签</p>
+            <p class="item">
+            </p>
+            <button class="btn btn-5" type="submit">创 建</button>
+        </div>
+    </div>
+    <div class="g-right">
+        <div class="m-section m-section-2">
+            <p class="option_name option_name-1">权限设置</p>
+            <label><input class="z-hidden" type="radio" checked name="privilege"
+                          value="0"><i></i><span>所有人可见</span></label>
+            <label><input class="z-hidden" type="radio" name="privilege" value="1"><i></i><span>关注者、粉丝可见</span></label>
+            <label><input class="z-hidden" type="radio" name="privilege" value="2"><i></i><span>仅自己可见</span></label>
+            <p class="option_name option_name-1 option_name-4">作品授权</p>
+            <div class="authorization"><span data-value="0">不限制作品用途</span>
+                <ul class="z-hidden">
+                    <li data-value="0">不限制作品用途</li>
+                    <li data-value="1">限制作品用途</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</form>
+<!-- /主体 -->
+<script src="../../common/js/address_codes.js"></script>
+<script src="../../common/js/md5.js"></script>
+<script src="../../common/js/base.js"></script>
+<script src="../../page/works/create.js"></script>
+</body>
+</html>
