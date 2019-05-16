@@ -4,8 +4,6 @@
 
 所有交互及AJAX请求均通过原生JavaScript实现，不使用第三方框架和库（如jQuery）。
 
-查看在线演示：http://demo.horochx.org/ego/html/index.html
-
 PS：后端由网易云提供，限制了访问频率。因此部分AJAX请求会被挂起，导致页面渲染不完整、交互无法及时反馈。
 
 ## 实现功能：
